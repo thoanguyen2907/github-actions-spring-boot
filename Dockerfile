@@ -1,4 +1,4 @@
-FROM maven:2.7.12-openjdk-17 AS build
+FROM maven:2.7.0-openjdk-17 AS build
 WORKDIR /app
 COPY pom.xml .
 RUN mvn dependency:go-offline -B
