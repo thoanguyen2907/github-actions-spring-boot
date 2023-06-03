@@ -1,4 +1,4 @@
 FROM openjdk:17
 EXPOSE 8080
-COPY --from=build /target/spring-boot-github-actions.jar spring-boot-github-actions.jar
-ENTRYPOINT ["java","-jar","/spring-boot-github-actions.jar"]
+COPY --from=build /github-cicd-actions/target/spring-boot-github-actions.jar /github-cicd-actions/spring-boot-github-actions.jar
+ENTRYPOINT ["java","-jar","/github-cicd-actions/spring-boot-github-actions.jar"]
